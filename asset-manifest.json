@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/school_raxeon.githud.io/static/css/main.543b2051.chunk.css",
+    "main.js": "/school_raxeon.githud.io/static/js/main.d67507ba.chunk.js",
+    "main.js.map": "/school_raxeon.githud.io/static/js/main.d67507ba.chunk.js.map",
+    "runtime-main.js": "/school_raxeon.githud.io/static/js/runtime-main.a5ba17ac.js",
+    "runtime-main.js.map": "/school_raxeon.githud.io/static/js/runtime-main.a5ba17ac.js.map",
+    "static/js/2.89238346.chunk.js": "/school_raxeon.githud.io/static/js/2.89238346.chunk.js",
+    "static/js/2.89238346.chunk.js.map": "/school_raxeon.githud.io/static/js/2.89238346.chunk.js.map",
+    "static/js/3.21578ca9.chunk.js": "/school_raxeon.githud.io/static/js/3.21578ca9.chunk.js",
+    "static/js/3.21578ca9.chunk.js.map": "/school_raxeon.githud.io/static/js/3.21578ca9.chunk.js.map",
+    "index.html": "/school_raxeon.githud.io/index.html",
+    "static/css/main.543b2051.chunk.css.map": "/school_raxeon.githud.io/static/css/main.543b2051.chunk.css.map",
+    "static/js/2.89238346.chunk.js.LICENSE.txt": "/school_raxeon.githud.io/static/js/2.89238346.chunk.js.LICENSE.txt",
+    "static/media/cap.ec75c730.png": "/school_raxeon.githud.io/static/media/cap.ec75c730.png",
+    "static/media/index.css": "/school_raxeon.githud.io/static/media/loginBg.9a77ab99.png",
+    "static/media/loginBg.d3cae808.svg": "/school_raxeon.githud.io/static/media/loginBg.d3cae808.svg",
+    "static/media/profileImage.47c99319.webp": "/school_raxeon.githud.io/static/media/profileImage.47c99319.webp",
+    "static/media/purple-logo.3f0a2da6.jpg": "/school_raxeon.githud.io/static/media/purple-logo.3f0a2da6.jpg",
+    "static/media/undraw_authentication.e9633564.svg": "/school_raxeon.githud.io/static/media/undraw_authentication.e9633564.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5ba17ac.js",
+    "static/js/2.89238346.chunk.js",
+    "static/css/main.543b2051.chunk.css",
+    "static/js/main.d67507ba.chunk.js"
+  ]
+}
