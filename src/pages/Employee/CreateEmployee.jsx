@@ -68,17 +68,17 @@ const CreateEmployee = () => {
                     }, 500);
                     setSidebarActive(false);
                 }} />
-                <div className="w-full tab-sm:p-10 px-3 py-10 bg-gray-200 max-h-screen overflow-auto">
+                <div className="w-full  px-10 bg-gray-200 max-h-screen overflow-auto">
 
-                    <div className="grid grid-cols-2 gap-4 tab-sm:grid-cols-1">
+                    {/* <div className="grid grid-cols-2 gap-4 tab-sm:grid-cols-1">
                         <p className="text-4xl text-secondary font-bold w-full">
                             Create Employee
                         </p>
                         
-                    </div>
+                    </div> */}
                     <br />
                     <div className="w-full rounded shadow mb-3  bg-white p-1">
-                        <div className="inline-flex align-middle text-secondary text-lg px-5 font-semibold font-sans">
+                        <div className="inline-flex align-middle text-secondary text-lg font-semibold font-sans">
                             <span className="px-2 text-2xl">
                                 <FaUserCircle />
 
@@ -88,6 +88,7 @@ const CreateEmployee = () => {
                     </div>
                     <div className="w-full bg-white rounded shadow " >
                         <IconHeading icon={<FaSchool />} heading="Academic Details" />
+                        <hr/>
                         <div className="p-4">
                             <div className="grid grid-cols-1 md:grid-cols-3 py-2 gap-4 ">
                                 <div className="w-full">
@@ -173,6 +174,7 @@ const CreateEmployee = () => {
                     
 
                         <IconHeading icon={<FaUserCheck />} heading="Employee Details" />
+                        <hr />
 
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4  px-4 py-2">
                             <div className="w-full">
@@ -265,6 +267,7 @@ const CreateEmployee = () => {
                                             
 
             <IconHeading icon={<FaGlobe />} heading="Social Links" />
+            <hr/>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
                 <div className="w-full">
@@ -288,6 +291,7 @@ const CreateEmployee = () => {
             </div>
 
             <IconHeading icon={<FaUserLock />} heading="Login Details" />
+            <hr/>
 
 
             <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 p-4">

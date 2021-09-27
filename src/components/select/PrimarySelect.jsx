@@ -36,7 +36,7 @@ function PrimarySelect(props) {
                     props.options.map(option => {
                         return (
                             <>
-                                <button className="p-1 w-full hover:bg-white" onClick={props.onClick}>
+                                <button className="p-1 mr-auto w-full hover:bg-white" onClick={props.onClick}>
                                     {option}
                                 </button>
                                 <hr />
