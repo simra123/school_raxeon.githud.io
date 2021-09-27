@@ -23,7 +23,7 @@ const  handleselectedFile = (event) => {
       output.classList.remove('hidden');
       setRemove('remove');
       setBgColor('rgba(108, 99, 252)');
-      setBgLabel('black');
+      setBgLabel('white');
 
       
      

@@ -68,7 +68,7 @@ const CreateEmployee = () => {
                     }, 500);
                     setSidebarActive(false);
                 }} />
-                <div className="w-full  px-10 bg-gray-200 max-h-screen overflow-auto">
+                <div className="w-full  md:px-10 bg-gray-200 max-h-screen overflow-auto">
 
                     {/* <div className="grid grid-cols-2 gap-4 tab-sm:grid-cols-1">
                         <p className="text-4xl text-secondary font-bold w-full">
