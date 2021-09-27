@@ -38,7 +38,7 @@ const [subType, setSubType] = useState('Select');
                     }, 500);
                     setSidebarActive(false);
                 }} />
-
+       
                 <div className="w-full tab-sm:p-10 px-3 py-10 bg-gray-200 max-h-screen overflow-auto">
 
                     <div className="grid grid-cols-2 gap-4 tab-sm:grid-cols-1">
@@ -58,7 +58,7 @@ const [subType, setSubType] = useState('Select');
                     </div>
 
                     <div className="bg-white border   shadow rounded " >
-                        <div className="grid grid-cols-1 gap-4 p-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
                             <div>
                                 <label htmlFor="" className=" ">
                                 Branch  <span className="text-red-600">*</span> </label>
@@ -83,6 +83,8 @@ const [subType, setSubType] = useState('Select');
                                 Subject Code <span className="text-red-600">*</span> </label>
                                 <PrimaryTextFields/>
                             </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-4 px-4">
 
                             <div>
                                 <label htmlFor="" className=" ">
@@ -92,7 +94,7 @@ const [subType, setSubType] = useState('Select');
 
                             <div>
                                 <label htmlFor="" className=" ">
-                                Subject Type  <span className="text-red-600">*</span> </label>
+                                 Subject Type  <span className="text-red-600">*</span> </label>
                                 <PrimarySelect
                                     id="subType"
                                     value={subType}
@@ -102,8 +104,9 @@ const [subType, setSubType] = useState('Select');
                                     }}
                                 />
                             </div>
+                        </div>    
 
-                        </div>
+                        
 
 
                            

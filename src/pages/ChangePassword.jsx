@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Cap from '../images/cap.png';
 import {Link } from 'react-router-dom';
-import { FaFingerprint } from 'react-icons/fa'
+import { FaFingerprint ,FaLock} from 'react-icons/fa'
 
 const ChangePassword = () => {
 
@@ -32,11 +32,24 @@ const ChangePassword = () => {
                                 <FaFingerprint className="text-5xl mx-auto mt-4 text-gray-700"/>
                             </div>
                             <div className="p-5 ">
-                             <p htmlFor="newpass" className="text-md font-light py-2 ">Enter new <span className="font-medium">password</span></p>
-                             <input type="password" id="newpass" className="w-full p-2   rounded border shadow focus:outline-none focus:border-purple-500" placeholder="*****" />
-                             <p htmlFor="retypepass" className="text-md font-light py-2 ">Confirm <span className="font-medium">password</span></p>
-
-                             <input type="password" id="retypepass" className="w-full p-2   rounded border shadow focus:outline-none focus:border-purple-500" placeholder="*****" />
+                                <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
+                                    <div className="max-w-7 bg-gray-200 p-2 px-3 ">
+                                      < FaLock/>
+                                    </div>
+                                    <div className="w-full">
+                                        <input type="password" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Enter new password" />
+                                    </div>
+                                </div>
+                                <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
+                                    <div className="max-w-7 bg-gray-200 p-2 px-3 ">
+                                      < FaLock/>
+                                    </div>
+                                    <div className="w-full">
+                                        <input type="password" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Confirm password" />
+                                    </div>
+                                </div>
 
                                 
                                 <Link to="/create-Branch">

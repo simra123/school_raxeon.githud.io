@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import LoginBg from '../images/loginBg.svg';
 import Cap from '../images/cap.png'
+import {FaUserAlt ,  FaLock} from 'react-icons/fa';
+
 
 const Login = () => {
 
@@ -31,15 +33,27 @@ const Login = () => {
                                 <h1 className="text-xl text-gray-600 font-bold text-center">Cambrian School & College</h1>
                             </div>
                             <div className="p-5 ">
-                                <p className="pl-2 pb-2">Username</p>
-                                <input type="text" className="w-full p-2 rounded border shadow focus:outline-none focus:border-purple-500" />
-                                <br />
-                                <br />
-                                <p className="pl-2 pb-2">Password</p>
-                                <input type="text" className="w-full p-2 rounded border shadow focus:outline-none focus:border-purple-500" />
-                                <br />
-                                <br />
-                                <div className="inline-flex w-full">
+                                <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
+                                    <div className="max-w-7 bg-gray-200 p-2 px-3 ">
+                                        <FaUserAlt/>
+                                    </div>
+                                    <div className="w-full">
+                                        <input type="text" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Username" />
+                                    </div>
+                                </div>
+                                
+                                <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
+                                    <div className="max-w-7 bg-gray-200 p-2 px-3 ">
+                                        < FaLock/>
+                                    </div>
+                                    <div className="w-full">
+                                        <input type="password" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Password" />
+                                    </div>
+                                </div>
+                               
+                                <div className="inline-flex w-full mt-8">
                                     <p className="inline-flex w-1/2">
                                         <div id="rememberOutline" className="w-6 h-6 mr-2 border bg-white transition duration-200 rounded" style={{ padding: '0.32rem' }} onClick={() => {
                                             if (remember) {

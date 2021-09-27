@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState  , useEffect} from 'react';
 
 import Cap from '../images/cap.png';
 import {Link } from 'react-router-dom';
 import { FaFingerprint } from 'react-icons/fa'
 
+
+
 const Otp = () => {
+  
     document.addEventListener("DOMContentLoaded", function(event) {
 
         function OTPInput() {
@@ -50,7 +53,7 @@ const Otp = () => {
                                 
                                 </div>
                                 
-                                <Link to="/create-Branch">
+                                <Link to="/changepassword">
                                     <button className="w-full p-2 mt-5 rounded shadow bg-purple-600 text-white">
                                         VERIFY
                                     </button>

@@ -55,9 +55,9 @@ const CreateDesignation = () => {
                                         Add Designation
                                     </div>
                                 </div>
-                                <div className="w-full rounded shadow mb-3  bg-white p-4">
+                                <div className="w-full rounded shadow mb-3 grid grid-cols-2 md:grid-cols-2 gap-4 bg-white p-4">
 
-                                    <div className="w-full pb-5">
+                                    <div className="w-full ">
                                         <p className="py-1">
                                             Branch <span className="text-red-600">*</span>
                                         </p>
@@ -66,7 +66,7 @@ const CreateDesignation = () => {
                                         }} />
                                     </div>
                                     <div>
-                                        <label htmlFor="">Designation Name  <span className="text-red-600">*</span> </label>
+                                        <p className="py-1">Designation Name  <span className="text-red-600">*</span> </p>
                                         <PrimaryTextFields />
                                     </div>
                                 </div>

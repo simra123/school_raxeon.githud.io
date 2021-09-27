@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Cap from '../images/cap.png';
 import ForgetPass from '../images/undraw_authentication.svg'
 import {Link } from 'react-router-dom';
-import { FaFingerprint } from 'react-icons/fa'
+import { FaFingerprint , FaMailBulk } from 'react-icons/fa'
 
 const ForgetPassword = () => {
 
@@ -33,10 +33,17 @@ const ForgetPassword = () => {
                             </div>
                             <div className="p-5 ">
                                
-                                <p className="pl-2 pb-2">Email</p>
-                                <input type="email" className="w-full p-2 rounded border shadow focus:outline-none focus:border-purple-500" />
+                                <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
+                                    <div className="max-w-7 bg-gray-200 p-2 px-3 ">
+                                        <FaMailBulk/>
+                                    </div>
+                                    <div className="w-full">
+                                        <input type="password" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Password" />
+                                    </div>
+                                </div>
                                 
-                                <Link to="/create-Branch">
+                                <Link to="/otp">
                                     <button className="w-full p-2 mt-5 rounded shadow bg-purple-600 text-white">
                                       Forgot Password?
                                     </button>
