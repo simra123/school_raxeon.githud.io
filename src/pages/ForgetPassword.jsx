@@ -30,16 +30,17 @@ const ForgetPassword = () => {
 
                               <h1 className="text-xl text-gray-600 font-bold text-center">Cambrian School & College</h1>
                               <FaFingerprint className="text-5xl mx-auto mt-4 text-gray-700"/>
+                              <p className="text-md font-light mt-3">Confirm your email and we'll send the instructions</p>
                             </div>
-                            <div className="p-5 ">
+                            <div className="px-5 py-3 ">
                                
                                 <div className="inline-flex w-full shadow rounded border focus:ring-1 tracking-wider ring-primary my-3">
                                     <div className="max-w-7 bg-gray-200 p-2 px-3 ">
                                         <FaMailBulk/>
                                     </div>
                                     <div className="w-full">
-                                        <input type="password" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
-                                         placeholder="Password" />
+                                        <input type="email" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
+                                         placeholder="Enter your email" />
                                     </div>
                                 </div>
                                 

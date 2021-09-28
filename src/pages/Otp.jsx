@@ -39,7 +39,7 @@ const Otp = () => {
 
                                 <h1 className="text-xl text-gray-600 font-bold text-center">Cambrian School & College</h1>
                                 <FaFingerprint className="text-5xl mx-auto mt-4 text-gray-700"/>
-                                <p className="text-md font-light mt-3">You will get an OTP via <span className="font-medium">sms</span></p>
+                                <p className="text-md font-light mt-3">You will get an OTP  via <span className="font-medium">email/sms</span></p>
                             </div>
                             <div className="p-5 ">
                                 
