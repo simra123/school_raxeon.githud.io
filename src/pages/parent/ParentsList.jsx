@@ -23,8 +23,8 @@ const ParentsList = () => {
     return (
         <>
             <div className="fixed w-screen h-screen bg-gray-200">
-                <SidebarMobile/>
-                <Navbar/>
+                <SidebarMobile />
+                <Navbar />
 
                 <div className="tab-sm:inline-flex w-full h-full">
 
@@ -46,7 +46,7 @@ const ParentsList = () => {
                             <p className="text-4xl text-secondary font-bold w-full">
                                 Parents List
                             </p>
-                            
+
                         </div>
                         <br />
                         <div className="w-full rounded shadow bg-white p-1">
@@ -95,7 +95,7 @@ const ParentsList = () => {
                                         <td className="text-center p-4 px-2 border">Md. Ballayet Mollha</td>
                                         <td className="text-center p-4 px-2 border">Bussiness</td>
                                         <td className="text-center p-4 px-2 border">+14424575757</td>
-                                        <td className="text-center p-4 px-2 border">parent@ramom.com</td>
+                                        <td className="text-center p-4 px-2 border">parentfathermother@ramom.com</td>
                                         <td className="text-center p-4 px-2 border">
                                             <div className="grid grid-cols-3 ">
                                                 <button className="border bg-blue-600 text-blue-600 rounded-lg">HH</button>

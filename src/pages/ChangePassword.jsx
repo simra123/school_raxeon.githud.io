@@ -52,7 +52,7 @@ const ChangePassword = () => {
                                 </div>
 
                                 
-                                <Link to="/create-Branch">
+                                <Link to="/dashboard">
                                     <button className="w-full p-2 mt-5 rounded shadow bg-purple-600 text-white">
                                         CHANGE PASSWORD
                                     </button>

@@ -29,7 +29,6 @@ const ForgetPassword = () => {
                              <img src={Cap} alt="logo" height="auto" className="mx-auto" width="130"/>
 
                               <h1 className="text-xl text-gray-600 font-bold text-center">Cambrian School & College</h1>
-                              <FaFingerprint className="text-5xl mx-auto mt-4 text-gray-700"/>
                               <p className="text-md font-light mt-3">Confirm your email and we'll send the instructions</p>
                             </div>
                             <div className="px-5 py-3 ">

@@ -7,9 +7,67 @@ import Cap from '../images/cap.png'
 import {FaUserAlt ,  FaLock} from 'react-icons/fa';
 
 
+import apiUrl from '../config';
+
 const Login = () => {
 
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const [remember, setRemember] = useState(false);
+
+    function OnChangeUsername(e) {
+        setUsername(e.target.value)
+    }
+
+    function OnChangePassword(e) {
+        setPassword(e.target.value)
+    }
+
+    function OnChangeRemember() {
+        if (remember) {
+            document.querySelector('#rememberOutline').classList.remove('border-purple-500');
+            document.querySelector('#remember').classList.remove('bg-purple-700');
+            setRemember(false);
+        } else {
+            document.querySelector('#rememberOutline').classList.add('border-purple-500');
+            document.querySelector('#remember').classList.add('bg-purple-700');
+            setRemember(true);
+        }
+    }
+
+    function LoginBtnClicked(e) {
+
+        e.preventDefault()
+
+        if (username !== '' && password !== '') {
+
+            const userDetails = {
+                email: username,
+                password: password
+            }
+
+            fetch(`${apiUrl}adminuser/login`, {
+                method: 'post',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                body: JSON.stringify(userDetails)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const success = data.success
+
+                    if (success) {
+                        console.log('sahi jawab')
+                    } else {
+                        console.log('galat jawab')
+                    }
+                })
+        }
+
+    }
 
     return (
         <>
@@ -39,7 +97,7 @@ const Login = () => {
                                     </div>
                                     <div className="w-full">
                                         <input type="text" className="w-full border rounded-r p-1 bg-white text-gray-400 focus:ring-1 tracking-wider ring-primary focus:outline-none px-4 border-gray-300 shadow-sm"
-                                         placeholder="Username" />
+                                         placeholder="Username or Email" />
                                     </div>
                                 </div>
                                 
@@ -70,7 +128,7 @@ const Login = () => {
                                         </div>
                                         <span className="px-1">Remember</span>
                                     </p>
-                                    <p className="w-1/2 text-right">
+                                    <p className="w-1/2 text-right hover:text-primary-purple">
                                         <Link to="/forgetPassword">  Forgot Password?</Link>
                                     </p>
                                 </div>

@@ -3,10 +3,14 @@ import React, { useState  , useEffect} from 'react';
 import Cap from '../images/cap.png';
 import {Link } from 'react-router-dom';
 import { FaFingerprint } from 'react-icons/fa'
-
-
+import {AiTwotoneCode} from 'react-icons/ai'
 
 const Otp = () => {
+    // useEffect(
+    //     () => {
+    //         windows.reload(false);
+    //     } , []
+    // )
   
     document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -38,7 +42,7 @@ const Otp = () => {
                                 <img src={Cap} alt="logo" height="auto" className="mx-auto" width="130"/>
 
                                 <h1 className="text-xl text-gray-600 font-bold text-center">Cambrian School & College</h1>
-                                <FaFingerprint className="text-5xl mx-auto mt-4 text-gray-700"/>
+                                <AiTwotoneCode className="text-5xl mx-auto mt-4 text-gray-700"/>
                                 <p className="text-md font-light mt-3">You will get an OTP  via <span className="font-medium">email/sms</span></p>
                             </div>
                             <div className="p-5 ">
